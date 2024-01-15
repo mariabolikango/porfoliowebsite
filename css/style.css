@@ -16,10 +16,15 @@ body{
     margin: 0 auto ;
 }
 .section_header{
+    position: sticky;
+    top: 0;
+    left: 0px;
+    right: 0px;
     background: #0a071d;
     height: 60px;
 }
 .navbar{
+    
     display: flex;
     justify-content: space-between;
 
@@ -32,6 +37,13 @@ body{
 .navbar_menu .menu_list{
     padding: 0 40px;
 
+}
+.navbar_menu .menu_list i{
+    display: none;
+}
+.navbar_menu .menu_list:hover{
+    font-weight: bold;
+    
 }
 #active{
     /*font-weight: bold;
