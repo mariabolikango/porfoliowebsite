@@ -1,3 +1,7 @@
+:root{
+    --navbar-color:#0a071d;
+    --btn-color:#0acf83;
+}
 *{
     padding: 0;
     margin: 0;
@@ -17,6 +21,7 @@ body{
 }
 .section_header{
     position: sticky;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
@@ -62,7 +67,6 @@ body{
     border: solid 1px #1746a2;
     background: #1746a2;
     padding: 5px 15px;
-    border-radius: 10px;
     margin: 10px  20px 0 0;
 }
 .contact a.btn_disabled{
@@ -75,6 +79,34 @@ body{
     background: #1746a2;
     border: #1746a2;
 }
+.contact a.btn_disabled#a:hover{
+    color: #FFF7FA;
+    background: #f24e1e;
+    border: #f24e1e;
+
+
+}
+.contact a.btn_disabled#b:hover{
+    color: #FFF7FA;
+    background: #1abcfe;
+    border: #1abcfe;
+
+
+}
+.contact a.btn_disabled#c:hover{
+    color: #FFF7FA;
+    background: #a259ff;
+    border: #a259ff;
+
+
+}
+.contact a.btn_disabled#d:hover{
+    color: #FFF7FA;
+    background: #0acf83;
+    border: #0acf83;
+
+
+}
 h1{
     position: relative;
     color: #fff7e9;
@@ -86,6 +118,7 @@ h1{
 h1::before{
     content:  attr(data-text);
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 0;
@@ -106,9 +139,9 @@ h1::before{
     }
 }
 
-p, h1, h2, h3, h4{
+body{
     margin-bottom: 5px;
-    animation: fade  6s ease forwards ;
+    animation: fade  4s ease forwards ;
      
 }
 @keyframes fade {
@@ -174,15 +207,32 @@ p, h1, h2, h3, h4{
     margin: 50px;
 }
 .section_service .container{
-    display: flex;
+   display: flex;
     margin: 50px;
 }
 .bloc_service{
     padding: 10px 70px ;
     margin: 15px;
     border: 1px solid  #e5e5f6;
-    background: #e5e5f6;
+    background:#e5e5f6;
+    
 }
+.bloc_service#a:hover{
+    background: #1abcfe;
+    color: #e5e5f6;
+
+}
+.bloc_service#b:hover{
+    background: #0acf83;
+    color: #e5e5f6;
+
+}
+.bloc_service#c:hover{
+    background: #a259ff;
+    color: #e5e5f6;
+
+}
+
 .bloc_service h3{
     margin-bottom: 60px;
     font-size: 25px;
@@ -270,24 +320,46 @@ p, h1, h2, h3, h4{
     
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 .work .btn{
     color: #FFF7FA;
     border: solid 1px #1746a2;
     background: #1746a2;
     padding: 5px 15px;
-    border-radius: 10px;
     margin: 10px  20px 0 0;
 }
 .section_work .container{
     display: flex;
     justify-content: space-between;
 }
-.section_work .container .bloc_work{
-    border: 1px solid #FFF;
-    background: #FFF;
+.section_work .container .bloc_item{
+    border: 1px solid #1abcfe;
+    background: #1abcfe;
     padding: 40px;
+    margin-bottom: 20px;
 
+}
+.section_work .container#orange .bloc_item{
+    border: 1px solid #f24e1e;
+    background: #f24e1e;
+    color: #fff7e9;
+}
+.section_work .container#green .bloc_item{
+    border: 1px solid #0acf83;
+    background: #0acf83;
+
+}
+.section_work .container#purple .bloc_item{
+    border: 1px solid #a259ff;
+    background: #a259ff;
+    color: #fff7e9;
+}
+.mrg30{
+    margin-bottom: 30px;
+}
+.mrg50{
+    margin-bottom: 50px;
 }
 
 
